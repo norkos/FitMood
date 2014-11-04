@@ -11,6 +11,9 @@ gem 'jquery-rails',         '4.0.0.beta2'
 gem 'turbolinks',           '2.3.0'
 gem 'jbuilder',             '2.2.3'
 gem 'rails-html-sanitizer', '1.0.1'
+gem 'faker',                 '1.4.2'
+gem 'will_paginate',           '3.0.7'
+gem 'bootstrap-will_paginate', '0.0.10'
 gem 'sdoc',                 '0.4.0', group: :doc
 
 group :development, :test do
