@@ -27,6 +27,11 @@ class User < ActiveRecord::Base
     SecureRandom.urlsafe_base64
   end
 
+  def feed
+    # This is preliminary. See "Following users" for the full implementation.
+    Micropost.where("user_id = ?", id)
+  end
+  
   # Remembers a user in the database for use in persistent sessions.
   def remember
     self.remember_token = User.new_token
