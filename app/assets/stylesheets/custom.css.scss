@@ -4,7 +4,8 @@
 /* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
-
+$gold: #f2c208;
+$footer_header_padding: 14px;
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -18,8 +19,10 @@ html {
   overflow-y: scroll;
 }
 
+
 body {
-  padding-top: 60px;
+  color: #5a5a5a;
+  padding-top: 0px;
 }
 
 section {
@@ -64,22 +67,64 @@ p {
   line-height: 1.7em;
 }
 
+.no-padding {
+  padding: 0 0 0 0;
+}
 
 /* header */
 
-#logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
-  &:hover {
-    color: white;
-    text-decoration: none;
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Colors for links */
+.navbar-inverse .navbar-nav {
+  
+  li{
+    a{
+       color: $gold;
+    
+    &:hover{
+      color: white;  
+    }
+    }
   }
+   
+    a{
+       color: $gold;
+    
+    &:hover{
+      color: white;  
+    }
+  }
+}
+
+.navbar{
+  margin-bottom: 0px;
+}
+
+.navbar-header .navbar-brand {
+   color: $gold;
+}
+
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar-wrapper .navbar {
+  padding-right: $footer_header_padding;
+  padding-left: $footer_header_padding;
+}
+
+.navbar-wrapper .navbar .container {
+  width: auto;
 }
 
 /* footer */

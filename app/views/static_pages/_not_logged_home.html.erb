@@ -1,0 +1,132 @@
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>
+
+	<div class="carousel-inner">
+		<div class="item active item1">
+			<div class="container">
+				<div class="carousel-caption">
+					<h1>myFit just for your for free</h1>
+					<p>
+						Create and share your fitness plan.
+					</p>
+					<p>
+						<%= link_to "Sign up now!", signup_path,
+						class: "btn btn-lg btn-success" %>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="item item2">
+			<div class="container">
+				<div class="carousel-caption">
+					<h1>myFit just for your for free</h1>
+					<p>
+						Create and share your fitness plan.
+					</p>
+					<p>
+						<%= link_to "Sign up now!", signup_path,
+						class: "btn btn-lg btn-success" %>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="item item3">
+			<div class="container">
+				<div class="carousel-caption">
+					<h1>myFit just for your for free</h1>
+					<p>
+						Create and share your fitness plan.
+					</p>
+					<p>
+						<%= link_to "Sign up now!", signup_path,
+						class: "btn btn-lg btn-success" %>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div><!-- /.carousel -->
+
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container marketing">
+
+	<!-- Three columns of text below the carousel -->
+	<div class="row">
+		<div class="col-lg-4">
+			<%= image_tag "home/kettle.jpg", :class => "img-circle", :style => "width: 140px; height: 140px;" %>
+			<h1>Continous</h1>
+			<p>
+				Make each your each training unique opportunity for breaking your bundaries. Learn online about your progress and adjust your needs.
+			</p>
+		</div><!-- /.col-lg-4 -->
+		<div class="col-lg-4">
+			<%= image_tag "home/kettle.jpg", :class => "img-circle", :style => "width: 140px; height: 140px;" %>
+			<h1>Training</h1>
+			<p>
+				Create and share your own unique training plan for free. No more papers on the gym, no more forgetting what to do next.
+			</p>
+		</div><!-- /.col-lg-4 -->
+		<div class="col-lg-4">
+			<%= image_tag "home/kettle.jpg", :class => "img-circle", :style => "width: 140px; height: 140px;" %>
+			<h1>Improvemet</h1>
+			<p>
+				Be online and check your progress comparing to previous trainings or expectations.
+			</p>
+
+		</div><!-- /.col-lg-4 -->
+	</div><!-- /.row -->
+
+	<!-- START THE FEATURETTES -->
+
+	<hr class="featurette-divider">
+	<div class="row featurette">
+		<div class="col-md-7">
+			<h2 class="featurette-heading">Have your personal trainer always online. <span class="text-muted">Challenge yourself and keep your progress constant.</span></h2>
+			<p class="lead">
+				Take your training into your hand and monitor your progress live on the gym. Time to change your oridnary plan for something really awesome.
+			</p>
+		</div>
+		<div class="col-md-5">
+			<%= image_tag "home/personal_trainer.jpg", :alt => "Personar trainer", :class => "featurette-image img-responsive img-rounded", :style => "width: 100%;" %>
+		</div>
+	</div>
+
+	<hr class="featurette-divider">
+	<div class="row featurette">
+		<div class="col-md-5">
+			<%= image_tag "home/friends.jpg", :alt => "Personar trainer", :class => "featurette-image img-responsive img-rounded", :style => "width: 100%;" %>
+		</div>
+		<div class="col-md-7">
+			<h2 class="featurette-heading">Share your plan with your fiends. <span class="text-muted">Make it social.</span></h2>
+			<p class="lead">
+				Hight time to share your plan with other. Do you also want to share your results ? Why not ! Move your daily workaout into next dimension.
+			</p>
+		</div>
+	</div>
+
+	<hr class="featurette-divider">
+	<div class="row featurette">
+		<div class="col-md-7">
+			<h2 class="featurette-heading">No more excuses. <span class="text-muted">Monitor your progress online and decide about the next steps.</span></h2>
+			<p class="lead">
+				Take your training into your hand and monitor your progress live on the gym. Time to change your oridnary plan for something really awesome.
+			</p>
+		</div>
+		<div class="col-md-5">
+			<%= image_tag "home/third.jpg", :alt => "Personar trainer", :class => "featurette-image img-responsive img-rounded", :style => "width: 100%;" %>
+		</div>
+	</div>
+	
+</div>
