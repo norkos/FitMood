@@ -15,7 +15,13 @@
         <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
       <% end %>
 
-      <%= yield %>
+      <% if @ignore_container != nil %>
+         <%= yield %>
+      <% else %>
+        <div class="container">
+          <%= yield %>
+        <div>  
+      <% end %>
 
       <div class="container">
         <%= render 'layouts/footer' %>
