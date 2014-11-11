@@ -1,17 +1,49 @@
- <div class="row">
-    <aside class="col-md-4">
-      <section class="user_info">
+<div class="row">
+  <aside class="col-md-3 left-menu">
+    <section class="user_info">
         <%= render 'shared/user_info' %>
-      </section>
-      <section class="stats">
+    </section>
+    <hr>
+    <section class="stats">
         <%= render 'shared/stats' %>
-      </section>
-      <section class="micropost_form">
+    </section>
+    <hr>
+ <section class="stats">
+        <%= render 'shared/trainings_info' %>
+    </section>
+    <hr>
+     <section class="micropost_form">
         <%= render 'shared/micropost_form' %>
       </section>
-    </aside>
-    <div class="col-md-8">
-      <h3>Micropost Feed</h3>
-      <%= render 'shared/feed' %>
-    </div>
+  </aside>
+  <div class="col-md-9">
+    <div class="row up-margin">
+        <div class="col-md-4">
+         <%= image_tag "logged_home/plan.jpg", :alt => "Personar trainer", :class => "featurette-image img-responsive img-rounded", :style => "width: 100%;" %>
+        </div>
+
+          <div class="col-md-4">
+          <%= image_tag "logged_home/challenge.jpg", :alt => "Personar trainer", :class => "featurette-image img-responsive img-rounded", :style => "width: 100%;" %>
+        </div>
+
+          <div class="col-md-4"> 
+          <%= image_tag "logged_home/achievement.jpg", :alt => "Personar trainer", :class => "featurette-image img-responsive img-rounded", :style => "width: 100%;" %>
+        </div>
+    </div>    
+      <div class="row up-margin down-margin">
+        <div class="col-md-4">
+         <button type="button" class="btn btn-success btn-lg btn-block">Workouts</button>
+        </div>
+
+          <div class="col-md-4">
+          <button type="button" class="btn btn-warning btn-lg btn-block">Challenges</button>
+        </div>
+
+          <div class="col-md-4"> 
+          <button type="button" class="btn btn-danger btn-lg btn-block">Achievements</button>
+        </div>
+    </div>    
+    <h3>News</h3>
+    <%= render 'shared/feed' %>
   </div>
+</div>

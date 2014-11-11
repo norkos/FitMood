@@ -1,15 +1,46 @@
+
 <% @user ||= current_user %>
-<div class="stats">
+<div class="row no-margins">
+   <aside class="col-md-6"><center>
   <a href="<%= following_user_path(@user) %>">
     <strong id="following" class="stat">
       <%= @user.following.count %>
     </strong>
     following
-  </a>
+  </a> </center>
+
+</aside>
+   <aside class="col-md-6"><center>
   <a href="<%= followers_user_path(@user) %>">
     <strong id="followers" class="stat">
       <%= @user.followers.count %>
     </strong>
     followers
-  </a>
+   
+  </a> </center>
+</aside>
+</div>
+
+<div class="row no-margins">
+   <aside class="col-md-6"><center>
+
+<div class="user_avatars">
+          <% @user.following.limit(3).each do |user| %>
+            <%= link_to gravatar_for(user, size: 30), user %>
+          <% end %>
+        </div>
+
+ </center>
+  </aside>
+   <aside class="col-md-6">
+    <center>
+
+<div class="user_avatars">
+          <% @user.followers.limit(3).each do |user| %>
+            <%= link_to gravatar_for(user, size: 30), user %>
+          <% end %>
+        </div>
+
+  </center>
+</aside>
 </div>
