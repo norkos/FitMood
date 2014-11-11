@@ -18,31 +18,21 @@
   </aside>
   <div class="col-xs-12 col-sm-8 col-md-8">
     <div class="row up-margin">
-        <div class="col-xs-4 col-sm-6 col-md-4">
-         <%= image_tag "logged_home/plan.jpg", :alt => "Personar trainer", :class => "featurette-image img-responsive img-rounded", :style => "width: 100%;" %>
+        <div class="col-xs-4 col-sm-6 col-md-4 down-margin-small">
+         <%= image_tag "logged_home/plan.jpg", :alt => "Personar trainer", :class => "featurette-image img-responsive img-rounded down-margin-small", :style => "width: 100%;" %>
+          <button type="button" class="btn btn-success btn-lg btn-block">Workouts</button>
         </div>
 
-           <div class="col-xs-4 col-sm-6 col-md-4">
-          <%= image_tag "logged_home/challenge.jpg", :alt => "Personar trainer", :class => "featurette-image img-responsive img-rounded", :style => "width: 100%;" %>
+           <div class="col-xs-4 col-sm-6 col-md-4 down-margin-small">
+          <%= image_tag "logged_home/challenge.jpg", :alt => "Personar trainer", :class => "featurette-image img-responsive img-rounded down-margin-small", :style => "width: 100%;" %>
+           <button type="button" class="btn btn-warning btn-lg btn-block">Challenges</button>
         </div>
 
-           <div class="col-xs-4 col-sm-6 col-md-4">
-          <%= image_tag "logged_home/achievement.jpg", :alt => "Personar trainer", :class => "featurette-image img-responsive img-rounded", :style => "width: 100%;" %>
-        </div>
-    </div>    
-      <div class="row up-margin down-margin">
-         <div class="col-xs-4 col-sm-6 col-md-4">
-         <button type="button" class="btn btn-success btn-lg btn-block">Workouts</button>
-        </div>
-
-           <div class="col-xs-4 col-sm-6 col-md-4">
-          <button type="button" class="btn btn-warning btn-lg btn-block">Challenges</button>
-        </div>
-
-           <div class="col-xs-4 col-sm-6 col-md-4">
+           <div class="col-xs-4 col-sm-6 col-md-4 down-margin-small">
+          <%= image_tag "logged_home/achievement.jpg", :alt => "Personar trainer", :class => "featurette-image img-responsive img-rounded down-margin-small", :style => "width: 100%;" %>
           <button type="button" class="btn btn-danger btn-lg btn-block">Achievements</button>
         </div>
-    </div>    
+    </div>       
     <h3>News</h3>
     <%= render 'shared/feed' %>
   </div>
