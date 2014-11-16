@@ -1,6 +1,10 @@
 
 
 Rails.application.routes.draw do
+  get 'challenges/new'
+
+  get 'challenges/view'
+
   root                'static_pages#home'
   get    'help'    => 'static_pages#help'
   get    'about'   => 'static_pages#about'

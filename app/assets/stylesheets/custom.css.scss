@@ -359,3 +359,24 @@ span.picture {
     border: 0;
   }
 }
+
+.challenges{
+  ol {
+      counter-reset: foo;
+      display: table;
+      width: 100%;
+  }
+
+  ol > li {
+      counter-increment: foo;
+      display: table-row;
+  }
+
+  ol > li::before {
+      content: counter(foo) ". DAY";
+      display: table-cell;
+      text-align: left;
+      font-weight: bold;
+      padding-right: 15px;
+  }
+}

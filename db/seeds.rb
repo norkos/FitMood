@@ -18,6 +18,15 @@ User.create!(name:  "Example User",
               activated_at: Time.zone.now)
 end
 
+Exercise.create!(name: 'ball crunch', muscle: 'abs')
+Exercise.create!(name: 'bicycle crunch', muscle: 'abs')
+Exercise.create!(name: 'crunch twist', muscle: 'abs')
+Exercise.create!(name: 'hanging knee raise', muscle: 'abs')
+Exercise.create!(name: 'clap pushup', muscle: 'chest')
+Exercise.create!(name: 'one-arm pushup', muscle: 'chest')
+Exercise.create!(name: 'burpees', muscle: 'hips')
+Exercise.create!(name: 'jumping lunge', muscle: 'hips')
+
 users = User.order(:created_at).take(6)
 50.times do
   content = Faker::Lorem.sentence(5)
