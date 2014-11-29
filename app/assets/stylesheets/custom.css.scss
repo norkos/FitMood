@@ -365,6 +365,7 @@ span.picture {
       counter-reset: foo;
       display: table;
       width: 100%;
+      padding-left: 0px;
   }
 
   ol > li {
@@ -374,9 +375,58 @@ span.picture {
 
   ol > li::before {
       content: counter(foo) ". DAY";
-      display: table-cell;
       text-align: left;
       font-weight: bold;
-      padding-right: 15px;
+      display: table-cell;
   }
+}
+
+.exercise-fitness{
+  background-color: #def17e;  
+}
+
+.btn-outline{ 
+  color:#563d7c;
+  background-color:transparent;
+  border-color:#563d7c
+}
+
+.btn-outline:hover,.btn-outline:focus,.btn-outline:active { 
+  color:#fff;
+  background-color:#563d7c;
+  border-color:#563d7c
+}
+
+.btn-outline-inverse {
+  color:#fff;
+  background-color:transparent;
+  border-color:#cdbfe3
+}
+
+.btn-outline-inverse:hover,.btn-outline-inverse:focus,.btn-outline-inverse:active {
+  color:#563d7c;
+  text-shadow:none;
+  background-color:#fff;
+  border-color:#fff
+}
+
+.btn-outline-success{ 
+  color:#563d7c;
+  background-color:transparent;
+  border-color:#563d7c
+}
+
+.btn-outline-success:hover,.btn-outline-success:focus,.btn-outline-success:active { 
+  color:#fff;
+  background-color:#563d7c;
+  border-color:#563d7c
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
 }

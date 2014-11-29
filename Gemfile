@@ -15,6 +15,7 @@ gem 'faker',                 '1.4.2'
 gem 'will_paginate',           '3.0.7'
 gem 'bootstrap-will_paginate', '0.0.10'
 gem 'sdoc',                 '0.4.0', group: :doc
+gem 'bootstrap-select-rails', '1.6.2'
 
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
