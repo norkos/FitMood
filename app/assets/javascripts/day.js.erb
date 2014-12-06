@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-
+  id = 0;
 
 	$('#addNewDay').click(function(){
 	$('ol#daySet').append(
@@ -63,13 +63,12 @@ $(document).ready(function(){
       }
     });
 
-
     $("ol#daySet").on('click', '.addNewExercise', function(){
       $(this).closest('.dayForm').find('.exercises').append('<div class="well well-lg exercise-fitness">'+
-'<div class="row">'+
+        '<div class="row">'+
           '<div class="col-xs-5 col-sm-5 col-md-5">'+
 
-        '<select class="selectpicker" data-width="100%" data-live-search="true">' +
+        '<select class="selectpicker selectpicker'+id+'" data-width="100%" data-live-search="true">' +
         '<optgroup label="A">' +
         '<option value="1" >A1</option>' +
         '<option value="1" >A2</option>' +
@@ -100,10 +99,12 @@ $(document).ready(function(){
         '</div>'+
         '</div>');
 
-  $('.selectpicker').selectpicker();
-  $('.selectpicker').selectpicker('setStyle', 'btn-large', 'add');
+        $('.selectpicker' + id).selectpicker();
+        $('.selectpicker' + id).selectpicker('setStyle', 'btn-large', 'add');
 
+        id = id + 1
     });
+
 
     $("ol#daySet").on('click', '.removeExercise', function(){
       $(this).closest('.exercise-fitness').remove();
