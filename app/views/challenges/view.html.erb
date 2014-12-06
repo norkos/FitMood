@@ -1,2 +1,20 @@
-<h1>Challenges#view</h1>
-<p>Find me in app/views/challenges/view.html.erb</p>
+<div class="row up-margin">
+        <div class="col-xs-6 col-sm-6 col-md-4 down-margin-small">
+         <%= image_tag "logged_home/plan.jpg", :alt => "Personar trainer", :class => "featurette-image img-responsive img-rounded down-margin-small", :style => "width: 100%;" %>
+ 
+
+            <button type="button" class="btn btn-success btn-lg btn-block">View</button>
+        </div>
+
+           <div class="col-xs-6 col-sm-6 col-md-4 down-margin-small">
+          <%= image_tag "logged_home/challenge.jpg", :alt => "Personar trainer", :class => "featurette-image img-responsive img-rounded down-margin-small", :style => "width: 100%;" %>
+
+          <%= link_to "Create", challenges_new_path,
+            class: "btn btn-warning btn-lg btn-block" %>
+        </div>
+
+           <div class="col-xs-6 col-sm-6 col-md-4 down-margin-small">
+          <%= image_tag "logged_home/achievement.jpg", :alt => "Personar trainer", :class => "featurette-image img-responsive img-rounded down-margin-small", :style => "width: 100%;" %>
+          <button type="button" class="btn btn-danger btn-lg btn-block">Remove</button>
+        </div>
+    </div>

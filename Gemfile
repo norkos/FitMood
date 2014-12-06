@@ -18,6 +18,7 @@ gem 'turbolinks',              '2.3.0'
 gem 'jbuilder',                '2.2.3'
 gem 'sdoc',                    '0.4.0', group: :doc
 gem 'bootstrap-select-rails', '1.6.2'
+gem 'jquery-turbolinks', '2.1.0'
 
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
