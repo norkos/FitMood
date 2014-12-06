@@ -4,9 +4,13 @@
 <div class="challenges">
 <ol id="daySet"> 
 </ol>
-
-	<div class="jumbotron">
-		<p><button type="button" id="addNewDay" class="btn btn-lg btn-success">Add challenge day</button></p>
-		<p><button type="button" id="" class="btn btn-lg btn-success">Save challenge</button></p>
+	<div id="challenge-image" class="jumbotron jumbotron-center">
+		<%= image_tag "pics/men-challenge.jpg" %>
+	</div>
+	<div class="row">
+		<div class="col-xs-4 col-sm-4 col-md-4"></div>
+		<div class="col-xs-4 col-sm-4 col-md-4">
+			<button type="button" id="addNewDay" class="btn btn-lg btn-success btn-block">Add day</button></div>
+		<div class="col-xs-4 col-sm-4 col-md-4"><button type="button" id="saveChallenge" class="btn btn-lg btn-info btn-block">Save whole challenge</button></div>
 	</div>
 </div>
