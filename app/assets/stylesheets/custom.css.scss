@@ -388,7 +388,12 @@ span.picture {
 .btn-outline{ 
   color:#563d7c;
   background-color:transparent;
-  border-color:#563d7c
+  border-color:#563d7c;
+  margin: 2px;
+}
+
+.small-margin-bottom{ 
+  margin-bottom: 2px;
 }
 
 .btn-outline:hover,.btn-outline:focus,.btn-outline:active { 
@@ -427,4 +432,5 @@ span.picture {
   text-align: center;
   background-color: transparent;
   margin-bottom: 0px;
+  padding-top: 0px
 }
